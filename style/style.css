@@ -391,12 +391,6 @@ a {
   color: #0B0706;
 }
 
-.header__right-togle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .banner {
   background-image: url("../assets/img/home/banner__bg.png");
   background-size: cover;
@@ -1104,6 +1098,10 @@ a {
   height: 448px;
 }
 
+.header__right-togle {
+  display: block;
+}
+
 @media (max-width: 1280px) {
   .container {
     padding: 0 20px;
@@ -1237,13 +1235,15 @@ a {
   }
   .header__right {
     position: absolute;
-    display: none;
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     padding: 20px;
     background-color: green;
     -webkit-transition: 0.3s;

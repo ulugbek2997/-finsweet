@@ -113,10 +113,10 @@
       }
       &__right{
         position: absolute;
-        display: none;
+        display: block;
         flex-direction: column;
         width: 100vw;
-        height: 100vh;
+        height: max-content;
         padding: 20px;
         background-color: green;
         transition: 0.3s;
