@@ -221,6 +221,7 @@ height: 735px;
     position: absolute;
     z-index: 3;
     max-width: 631px;
+    padding: 20px;
   }
   &__title{
     text-align: center;
@@ -365,6 +366,7 @@ height: 735px;
   &__body{
     display: flex;
     justify-content: space-between;
+    row-gap: 35px;
     margin-top: 50px;
   }
   &__card{
@@ -631,4 +633,17 @@ height: 735px;
   height: 448px;
 }
 
+.footer{
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 67px;
+  }
+  &__logo{
+    width: 122px;
+    height: 28px;
+  }
+  
+}
 @import './media';
