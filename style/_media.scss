@@ -1,0 +1,49 @@
+//sm	640px 
+@media (max-width: 640px) {  }
+//md	768px 
+	@media (max-width: 768px) {  
+    .header{
+      &__inner{
+        position: relative;
+        display: block;
+        column-gap: 0;
+        width: 100vw;
+      }
+      &__left{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      &__burger{
+        display: block;
+      }
+      &__right{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        padding: 20px;
+        background-color: green;
+        transition: 0.3s;
+      }
+      &__btn{
+        margin-top: 20px;
+      }
+    }
+    .navbar{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 20px;
+      margin: 0 auto;
+    }
+  }
+// lg	1024px
+  @media (max-width: 1280px) { 
+    .container{
+      padding: 0 20px;
+    }
+   }

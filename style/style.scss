@@ -1,0 +1,550 @@
+@import './fonts';
+@import './global';
+@import './stdClass';
+@import './_var';
+
+
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.header{
+
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 67px;
+  }
+  &__logo{
+    width: 121.41px;
+    height: 27.43px;
+  }
+  &__burger{
+    display: none;
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+    column-gap: 21px;
+  }
+}
+
+
+.navbar{
+  display:flex;
+  column-gap: 40px;
+  &__link:hover{
+    color: #0B0706;
+  }
+}
+
+.header__right-togle{
+  display: flex;
+}
+
+.banner{
+ background-image: url('../assets/img/home/banner__bg.png') ;
+ background-size: cover;
+height: 735px;
+  &__body{
+    max-width: 640px;
+    padding-top: 17.41%;
+  }
+  &__btns{
+    display: flex;
+    column-gap: 25px;
+    margin-top: 48px;
+    
+  }
+  &__statistics{
+    margin-top: 8.41%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+  }
+  &__statistics-line{
+    width: 65%;
+    height: 1px;
+    margin-top: 9px;
+    background-color:#E5E5E5;
+  }
+}
+
+.aboutUs{
+  &__inner{
+    padding: 95px 0 70px 0;
+  }
+  &__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__description{
+    margin-top: 32px;
+  }
+  &__btn{
+    margin-top: 48px;
+  }
+  &__right{
+    position: relative;
+    width: 480px;
+    height: 578px;
+  }
+  &__playVideo-btn{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    z-index: 2;
+  }
+  &__supporters{
+    margin-top:64px;
+  }
+  &__supporters-swiper{
+    margin-top: 32px;
+  }
+}
+
+.whatWeDo{
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0 100px 0;
+  }
+  &__description{
+    margin-top: 16px;
+  }
+  &__items{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-top: 32px;
+  }
+  &__item{
+    display: flex;
+    column-gap: 24px;
+  }
+  &__item-img{
+    width: 28px;
+    height: 28px;
+  }
+  &__item-subtitle{
+    margin-top: 8px;
+  }
+}
+
+.projects{
+
+  &__name{
+    text-align: center;
+  }
+  &__title{
+    margin-top: 16px;
+    text-align: center;
+  }
+  &__inner{
+    padding: 90px 0;
+  }
+  &__body{
+    display: flex;
+    column-gap: 24px;
+    margin-top: 65px
+  }
+}
+
+.statistics{
+
+  &__inner{
+    padding: 95px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left{
+    max-width: 611px;
+  }
+  &__subtitle{
+    margin-top: 20px;
+    opacity: 0.5;
+  }
+  &__items{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+  &__item{
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+  }
+  &__item-box{
+    width: 16px;
+    height: 16px;
+    background-color: aqua;
+  }
+}
+
+.donateBanner{
+  padding: 95px 0;
+  &__inner{
+    position: relative;
+    height: 384px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__body{
+    position: absolute;
+    z-index: 3;
+    max-width: 631px;
+  }
+  &__title{
+    text-align: center;
+  }
+  &__btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    column-gap: 32px;
+  }
+}
+
+.news{
+  &__body{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    margin-top: 48px;
+    row-gap: 24px;
+  }
+}
+
+.ourEvents{
+
+  &__body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+    margin-top: 48px;
+  }
+  &__card{
+    max-width: 628px;
+    padding: 0 40px;
+    height: 191px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+  }
+  &__card-left{
+    display: flex;
+    column-gap: 24px;
+  }
+  &__card-title{
+    display: flex;
+    align-items: center;
+    column-gap: 23px;
+  }
+  &__card-line{
+    height: 2px;
+    width: 44px;
+    background-color: #1D2130;
+  
+  }
+  &__card-main{
+    max-width: 381px;
+  }
+  &__subtitle{
+    margin-top: 8px
+  }
+}
+// ***************** page About Us *****************//
+.knowAboutUs{
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px;
+  }
+  &__right{
+    margin-top: 60px;
+    max-width: 496px;
+  }
+  &__rigt-subtitle{
+    margin-top: 17px;
+    opacity: 0.7;
+  }
+}
+.ourMission{
+
+  &__inner{
+    position: relative;
+    margin-top: 320px;
+    padding-bottom: 95px;
+  }
+
+  &__video{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -225px;
+    width: 100%;
+    height: 448px;
+  }
+  &__playVideo-btn{
+    position: absolute;
+    z-index: 2;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+  }
+  &__body{
+    display: flex;
+    column-gap: 95px;
+    padding-top: 320px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  &__card{
+    max-width: 496px;
+  }
+  &__card-title{
+    text-transform: uppercase;
+  }
+  &__card-subtitle{
+    margin-top: 16px;
+  }
+  &__card-text{
+    margin-top: 8px;
+    opacity: 0.7;
+  }
+  &__supporters{
+    margin-top: 95px;
+  }
+}
+
+.awards{
+
+  &__inner{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 96px 0;
+  }
+  &__title{
+    text-align: center;
+  }
+  &__body{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  &__card{
+    max-width: 120px;
+  }
+  &__card-img{
+    width: 100%;
+  }
+  &__card-year{
+    margin-top: 17px;
+    text-align: center;
+  }
+  &__card-name{
+    margin-top: 3px;
+    text-align: center;
+  }
+  &__card-location{
+    text-align: center;
+    margin-top: 6px;
+    opacity: 0.6;
+  }
+}
+
+.journey{
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 0;
+  }
+  &__left{
+    max-width: 488px;
+    margin-left: 7.5%;
+  }
+  &__left-title{
+    margin-top: 16px
+  }
+  &__left-text{
+    margin-top: 16px;
+    opacity: 0.5;
+  }
+  &__items{
+    display: flex;
+    column-gap: 32px;
+    margin-top: 32px;
+  }
+  &__item-text{
+    opacity: 0.5;
+  }
+  &__right{
+    width: 647px;
+    height: 448px;
+    border-radius:12px 0 0 12px ;  
+  }
+} 
+
+.ourTeam{
+
+  &__inner{
+    margin-top: 95px;
+  }
+  &__title{
+    text-align: center;
+  }
+  &__subtitle{
+    text-align: center;
+    margin-top: 16px;
+  }
+  &__body{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 42px;
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+  &__card{
+    width: 296px;
+  }
+  &__card-img{
+    width: 100%;
+    height: 320px
+  }
+  &__card-name{
+    margin-top: 16px;
+    text-align: center;
+  }
+  &__card-profession{
+    margin-top: 8px;
+    text-align: center;
+  }
+  &__card-links{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    column-gap: 20px;
+  }
+}
+
+// ***************** page What we do *****************//
+.working{
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 95px 0 0 0 ;
+  }
+  &__description{
+    margin-top: 34px;
+  }
+  &__right{
+    width: 480px;
+    height: 384px;
+  }
+}
+
+.environment{
+
+  &__inner{
+    padding: 95px 0;
+  }
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 65px;
+    column-gap: 64px;
+    row-gap: 48px;
+  }
+  &__item{
+    display: flex;
+    max-width: 384px;
+    column-gap: 24px;
+  }
+  &__item-img{
+    width: 28px;
+    height: 28px;
+  }
+  &__item-text{
+    margin-top: 8px;
+  }
+}
+
+// ***************** page Media *****************//
+.topNews{
+
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 95px 0;
+  }
+  &__description{
+    margin-top: 16px;
+  }
+  &__right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 592px;
+    padding: 24px;
+    background-color: #FFFFFF;
+  }
+  &__card{
+    display: flex;
+    column-gap: 24px;
+  }
+  &__card-img{
+    width: 192px;
+    height: 160px;
+  }
+  &__card-body{
+    width: 296px;
+  }
+}
+.topNews .titleBox{
+  max-width: 555px;
+}
+
+.media .news{
+  &__inner{
+    padding: 95px 0;
+  }
+  &__title{
+    text-align: center
+  }
+  &__subtitle{
+    margin-top: 16px;
+    text-align: center;
+  }
+}
+.media .header{
+  background: #EFF7F2;
+}
+@import './media';
