@@ -1406,6 +1406,11 @@ a {
   .journey__right {
     width: 90%;
   }
+
+  .awards__title {
+    font-size: 36px;
+    line-height: 46px;
+  }
 }
 @media (max-width: 450px) {
   .titleBox__right h2 {

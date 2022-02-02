@@ -282,6 +282,12 @@
       width: 90%;
     }
   }
+  .awards{
+    &__title{
+      font-size: 36px;
+      line-height: 46px;
+    }
+  }
  }
 
  @media (max-width:450px){
