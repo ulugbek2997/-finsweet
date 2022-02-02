@@ -95,8 +95,10 @@
 
 @media (max-width: 768px) {  
     .header{
-      &__inner{
+      &__container{
         position: relative;
+      }
+      &__inner{
         display: block;
         column-gap: 0;
         width: 100%;
@@ -113,13 +115,16 @@
       }
       &__right{
         position: absolute;
-        display: block;
+        display: none;
         flex-direction: column;
+        justify-content: center;
         width: 100vw;
-        height: max-content;
+        height: 100vh;
+        left: 0;
         padding: 20px;
         background-color: green;
         transition: 0.3s;
+        z-index: 5;
       }
       &__btn{
         margin-top: 20px;
@@ -377,3 +382,7 @@
     }
   }
  }
+
+ .headerActive{
+  display: flex;
+}

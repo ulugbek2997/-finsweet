@@ -7,7 +7,6 @@ var swiper = new Swiper(".aboutUs__supporters-swiper", {
     delay: 1000,
   },
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 2,
       spaceBetween: 20
