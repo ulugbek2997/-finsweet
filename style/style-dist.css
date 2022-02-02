@@ -1245,7 +1245,7 @@ a {
     height: 100vh;
     left: 0;
     padding: 20px;
-    background-color: green;
+    background-color: #EFF7F2;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     z-index: 5;
@@ -1399,11 +1399,31 @@ a {
   .topNews__card-body {
     margin-top: 15px;
   }
+
+  .journey__left {
+    padding: 20px;
+  }
+  .journey__right {
+    width: 90%;
+  }
 }
 @media (max-width: 450px) {
   .titleBox__right h2 {
     font-size: 32px;
     line-height: 38px;
+  }
+
+  .ourTeam__title {
+    font-size: 36px;
+  }
+
+  .news__title {
+    font-size: 34px;
+  }
+
+  .journey__title {
+    font-size: 36px;
+    line-height: 46px;
   }
 }
 @media (max-width: 420px) {
